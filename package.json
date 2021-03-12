@@ -1,0 +1,28 @@
+{
+  "name": "yt-webpack2-basics",
+  "version": "1.0.0",
+  "description": "This is a practice app for Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack ./src/js/app.js -o ./dist --mode development",
+    "build:prod": "webpack ./src/js/app.js -o ./dist --mode production",
+    "build:dev-watch": "webpack ./src/js/app.js -o ./dist --mode development -w",
+    "webpack-help": "webpack --help=verbose",
+    "webpack-version": "webpack --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mschwarzmueller/yt-webpack2-basics.git"
+  },
+  "author": "Dallas Parker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mschwarzmueller/yt-webpack2-basics/issues"
+  },
+  "homepage": "https://github.com/mschwarzmueller/yt-webpack2-basics#readme",
+  "devDependencies": {
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0"
+  }
+}
