@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "webpack ./src/js/app.js -o ./dist --mode development",
-    "build:prod": "webpack ./src/js/app.js -o ./dist --mode production",
-    "build:dev-watch": "webpack ./src/js/app.js -o ./dist --mode development -w",
+    "build:dev": "webpack --config webpack.config.js --mode development",
+    "build:prod": "webpack --config webpack.config.js --mode production",
+    "build:dev-watch": "webpack --config webpack.config.js --mode development -w",
     "webpack-help": "webpack --help=verbose",
     "webpack-version": "webpack --version"
   },
